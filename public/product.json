@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "img":"https://i.ibb.co.com/GQ0ftFjV/writing-2327400-1.png",
+    "title": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "priceType": "Mo",
+    "badge": "Best Seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 2,
+    "img":"https://i.ibb.co.com/b5hhbVmw/design-tool.png",
+    "title": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "priceType": "One-Time",
+    "badge": "Popular",
+    "features": [
+      "2000+ templates",
+      "Monthly updates",
+      "Commercial license"
+    ],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 3,
+    "img":"https://i.ibb.co.com/hFKrSyHV/camera-8775444-1.png",
+    "title": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "priceType": "Mo",
+    "badge": "New",
+    "features": [
+      "10M+ assets",
+      "Commercial use",
+      "No attribution"
+    ],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 4,
+    "img":"https://i.ibb.co.com/dsgzVtBN/operation.png",
+    "title": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
+    "priceType": "Mo",
+    "badge": "Popular",
+    "features": [
+      "50+ automations",
+      "API access",
+      "Custom workflows"
+    ],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 5,
+    "img":"https://i.ibb.co.com/1GzQHWQT/portfolio.png",
+    "title": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "priceType": "One-Time",
+    "badge": "New",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 6,
+    "img":"https://i.ibb.co.com/9H1KJ3z3/social-media.png",
+    "title": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
+    "priceType": "Mo",
+    "badge": "Best Seller",
+    "features": [
+      "5000+ assets",
+      "Scheduler included",
+      "Analytics dashboard"
+    ],
+    "buttonText": "Buy Now"
+  }
+]

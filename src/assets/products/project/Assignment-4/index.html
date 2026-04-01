@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-gray-50">
+
+  <div class="max-w-5xl mx-auto p-6 space-y-8">
+
+    <!-- Title -->
+    <h1 class="text-2xl font-bold text-gray-800">
+      Job Application Tracker
+    </h1>
+
+    <!-- Dashboard Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+      <div class="bg-white border border-gray-200 rounded-lg p-4">
+        <p class="text-sm text-gray-500">Total</p>
+        <p id="totalCount" class="text-xl font-semibold text-gray-800">0</p>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-4">
+        <p class="text-sm text-gray-500">Interview</p>
+        <p id="interviewCount" class="text-xl font-semibold text-green-600">0</p>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-4">
+        <p class="text-sm text-gray-500">Rejected</p>
+        <p id="rejectedCount" class="text-xl font-semibold text-red-600">0</p>
+      </div>
+
+    </div>
+
+    <!-- Jobs Header -->
+    <div class="flex justify-between items-center">
+      <h2 class="text-lg font-semibold text-gray-800">
+        Available Jobs
+      </h2>
+      <p id="tabCount" class="text-sm text-gray-500">
+        0 Jobs
+      </p>
+    </div>
+
+    <!-- btns -->
+    <div class="flex gap-4 border-b border-gray-200 pb-2">
+
+      <button class="tab-btn text-sm font-medium pb-2 border-b-2 border-blue-600 text-blue-600"
+        data-tab="all">
+        All
+      </button>
+
+      <button class="tab-btn text-sm font-medium pb-2 border-b-2 border-transparent text-gray-500"
+        data-tab="interview">
+        Interview
+      </button>
+
+      <button class="tab-btn text-sm font-medium pb-2 border-b-2 border-transparent text-gray-500"
+        data-tab="rejected">
+        Rejected
+      </button>
+
+    </div>
+
+    <!-- Job Container -->
+    <div id="jobContainer" class="space-y-6"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
