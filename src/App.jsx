@@ -1,41 +1,23 @@
-import { Suspense} from 'react'
-import './App.css'
-import Banner from './components/HomePage/Banner/Banner'
-import NavBar from './components/NavBar/NavBar'
-import Card from './components/ui/Card'
-import { ToastContainer } from 'react-toastify'
-import StartSection from './components/HomePage/StartSection'
-import Pricing from './components/HomePage/Pricing'
-import Work from './components/HomePage/Work'
-import Footer from './components/HomePage/Banner/Footer'
+import React, { useState } from "react";
+import Card from "./components/UI/Card";
 
-const fetchProduct = async () => {
-  const res = await fetch('./product.json')
-  return res.json();
-}
+const App = () => {
+  const [products] = useState([
+    { id: 1, title: "Product 1", price: 100, img: "https://via.placeholder.com/50" },
+    { id: 2, title: "Product 2", price: 200, img: "https://via.placeholder.com/50" },
+  ]);
 
-function App() {
+  const [selectedProduct, setSelectedProduct] = useState([]);
 
-  const productPromise = fetchProduct()
   return (
-    <>
-      <Suspense fallback=
-        {
-          <div className="flex justify-center items-center h-screen">
-            <span className="loading  loading-spinner text-secondary"></span>
-          </div>
-        }>
-        <NavBar/>
-        <Banner />
-        <Card productPromise={productPromise}/>
-        <StartSection/>
-        <Pricing/>
-        <Work/>
-        <Footer/>
-      </Suspense>
-      <ToastContainer/>
-    </>
-  )
-}
+    <div>
+      <Card
+        products={products}
+        selectedProduct={selectedProduct}
+        setSelectedProduct={setSelectedProduct}
+      />
+    </div>
+  );
+};
 
-export default App
+export default App;
